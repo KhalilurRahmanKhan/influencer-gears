@@ -115,4 +115,40 @@ footer{
     
 }
 
+/* new trend styles */
+
+.new-trend-cotainer{
+    width: 80%;
+    margin: auto;
+    
+}
+.new-trend-cotainer h1{
+    text-align: center;
+    margin: 30px;
+}
+.trend-items{
+    display: flex;
+    justify-content: space-between;
+}
+.trend-item{
+    width: 30%;
+}
+.trend-content{
+    width: 70%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 3px;
+    position: relative;
+    margin: auto;
+    top: -45px;
+    
+}
+.trend-content h4{
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+.trend-content a{
+    color: black;
+}
+
 
