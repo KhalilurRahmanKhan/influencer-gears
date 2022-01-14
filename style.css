@@ -53,6 +53,8 @@ nav ul li a{
         color: white;
         cursor: pointer;
         transition: all .5s ease;
+        font-weight: bold;
+        font-size: 14px;
 }
 #prebookBtn:hover{
     padding: 10px 50px;
@@ -119,10 +121,11 @@ nav ul li a{
 
 footer{
     height: 160px;
-    background-color: navy;
+    background-color: rgb(25, 25, 199);
     color: white;
     text-align: center;
     padding-top: 80px;
+    line-height: 30px;
 }
 .social-link-box {
     display: flex;
@@ -132,7 +135,7 @@ footer{
     width: 40px;
     height: 40px;
     border-radius: 100px;
-    background-color: rgb(88, 88, 114);
+    background-color: rgb(62, 62, 241);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -159,6 +162,9 @@ footer{
 .trend-item{
     width: 30%;
 }
+.trend-item img{
+    width: 100%;
+}
 .trend-content{
     width: 70%;
     background-color: white;
@@ -177,4 +183,42 @@ footer{
     color: black;
 }
 
+/* responsive styles for mobile */
+
+@media only screen and (max-width:320px) {
+    nav{
+        display: none;
+    }
+    .start-container{
+        display: block;
+    }
+    .start-content{
+        width: 100%;
+        margin: auto;
+    }
+    .start-img{
+        width: 100%;
+    }
+    .collection-div{
+        grid-template-columns: 1fr;
+    }
+    .trend-items{
+        display: block;
+    }
+    .trend-item{
+        width: 100%;
+    }
+    
+}
+
+/* responsive styles for tablet */
+
+@media only screen and (min-width:321px) and (max-width:768px) {
+    .collection-div{
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 5px;
+    }
+    
+   
+}
 
