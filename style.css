@@ -96,8 +96,9 @@ nav ul li a{
 .collection-div{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    row-gap: 20px;
-    column-gap: 50px;
+}
+.collection-div img{
+    width: 100%;
 }
 .collection-item{
     box-shadow: 3px 3px 5px 6px #ccc;
@@ -185,22 +186,49 @@ footer{
 
 /* responsive styles for mobile */
 
-@media only screen and (max-width:320px) {
+@media only screen and (max-width:470px) {
+    header{
+        display: block;
+        width: 100%;
+        margin-top: 20px;
+        text-align: center;
+    }
     nav{
         display: none;
     }
+        
     .start-container{
+        margin-top: 30px;
         display: block;
     }
     .start-content{
         width: 100%;
-        margin: auto;
+        text-align: center;
+    }
+    .start-content h1{
+        font-size: 16px;
+    }
+    .start-content p{
+        font-size: 10px;
+        margin: 15px 0px;
+    }
+    #prebookBtn{
+            padding: 5px 15px;
+            font-weight: normal;
+            font-size: 10px;
+            margin-bottom: 20px;
     }
     .start-img{
         width: 100%;
     }
+    .popular-collection-container h2{
+        font-size: 16px;
+    }
     .collection-div{
         grid-template-columns: 1fr;
+    }
+    .new-trend-cotainer h1{
+        font-size: 16px;
     }
     .trend-items{
         display: block;
@@ -208,16 +236,72 @@ footer{
     .trend-item{
         width: 100%;
     }
+    footer h1{
+        font-size: 16px;
+    }
+    footer p{
+        font-size: 11px;
+    }
     
 }
 
 /* responsive styles for tablet */
 
 @media only screen and (min-width:321px) and (max-width:768px) {
+   
     .collection-div{
         grid-template-columns: repeat(2,1fr);
-        column-gap: 5px;
     }
+    .start-content h1{
+        font-size: 16px;
+    }
+    .start-content p{
+        font-size: 10px;
+    }
+    nav ul li{
+        padding: 0px 2px;
+        font-size: 10px;
+    }
+    header h2{
+        font-size: 20px;
+    }
+    #prebookBtn{
+        padding: 5px 15px;
+        font-size: 10px;
+        font-weight: normal;
+    }
+   
+    
+    .trend-items{
+        display: flex;
+        justify-content: space-between;
+    }
+    .trend-item{
+        width: 25%;
+    }
+    .trend-item img{
+        width: 100%;
+    }
+    .trend-content{
+        width: 70%;
+        background-color: white;
+        padding: 10px;
+        border-radius: 3px;
+        position: relative;
+        margin: auto;
+        top: -20px;
+        
+    }
+    .trend-content h4{
+        margin-bottom: 3px;
+        font-size: 10px;
+        line-height: normal;
+    }
+    .trend-content a{
+        color: black;
+        font-size: 8px;
+    }
+    
     
    
 }
